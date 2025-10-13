@@ -28,7 +28,6 @@ public class Main {
             List<String> subBreeds = breedFetcher.getSubBreeds(breed);
             return subBreeds.size();
         } catch (BreedFetcher.BreedNotFoundException e) {
-            // 犬种不存在时返回 -1（或其他你想返回的数）
             System.out.println("error" + e.getMessage());
             return -1;
         }
