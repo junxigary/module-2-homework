@@ -29,7 +29,7 @@ public class Main {
             return subBreeds.size();
         } catch (BreedFetcher.BreedNotFoundException e) {
             System.out.println("error" + e.getMessage());
-            return -1;
+            return 0;
         }
     }
 }
